@@ -10,8 +10,9 @@ const forecast = (latitude, longitude, callback) => {
         }else{
             callback(undefined, 
                 'Today is ' + body.current.weather_descriptions + '. ' +
-                'It is currently '+ body.current.temperature + ' degress out. ' +
-                'It feels like '+ body.current.feelslike +' degress out.'
+                'It is currently ' + body.current.temperature + ' degress out. ' +
+                'It feels like ' + body.current.feelslike +' degress out. ' +
+                'The local time is ' + body.location.localtime + '.'
             )
         }
     })

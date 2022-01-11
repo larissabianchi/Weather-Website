@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <link rel="icon" href="/img/weather.png">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+
+            <h3>{{caption}}</h3>
+            <p>Name: {{name}}</p>
+            <p>City: {{city}}</p>
+            <p>Birth: {{birth}}</p>
+            <img class="portrait" src="/img/me.webp">    
+        </div>       
+
+        {{>footer}}
+    </body>
+</html>
